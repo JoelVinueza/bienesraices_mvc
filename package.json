@@ -1,0 +1,16 @@
+{
+  "name": "bienesraices_mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "author": "Joel Vinueza",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
