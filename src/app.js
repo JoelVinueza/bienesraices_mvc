@@ -1,12 +1,15 @@
 import express from "express";
-import mainRoutes from "./routes/index.routes.js";
+import userRoutes from "./routes/user.routes.js";
 
 const app = express();
 
 app.set("port", process.env.PORT || 4000);
-app.set( 'view engine', 'pug');
-app.set('views', './views');
 
-app.use('/', mainRoutes);
+app.set( 'view engine', 'pug');
+app.set('views', './src/views');
+
+app.use(express.static('public'));
+
+app.use('/auth', userRoutes);
 
 export default app;

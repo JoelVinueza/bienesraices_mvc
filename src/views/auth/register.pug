@@ -10,12 +10,20 @@ block content
             .bg-white.py-8.px-4.shadow
                 form.space-y-5
                     div
+                        label.block.text-sm.uppercase.text-gray-700.font-bold(for="name") Nombre
+                        input#name.w-full.px-3.py-1.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu Nombre" type="text" name="name")
+                    div
                         label.block.text-sm.uppercase.text-gray-700.font-bold(for="email") Correo
                         input#email.w-full.px-3.py-1.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu Correo" type="email" name="email")
                     div
                         label.block.text-sm.uppercase.text-gray-700.font-bold(for="password") Contraseña
                         input#password.w-full.px-3.py-1.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu Contraseña" type="password" name="password")
+                    div
+                        label.block.text-sm.uppercase.text-gray-700.font-bold(for="password_conf") COnfirmar Contraseña
+                        input#password_conf.w-full.px-3.py-1.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Confirma Tu Contraseña" type="password" name="password_conf")
+                    
                     div.flex.item-center.justify-between
-                        a.text-gray-500.text-xs(href="/auth/register") ¿No tienes cuenta? Registrate
+                        a.text-gray-500.text-xs(href="/auth/login") ¿Ya tienes cuenta? Inicia sesión
                         a.text-gray-500.text-xs(href="/auth/forgotPassword") Olvidé mi contraseña
-                    input(class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 cursor-pointer" type="submit" value="Iniciar Sesión")
+
+                    input(class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 cursor-pointer" type="submit" value="Crear Cuenta")
