@@ -1,12 +1,12 @@
 import { config } from "dotenv"
-config();
+config({path: '.env'});
 
-export const PORT = process.env.PORT || 4000;
+export const PORT = process.env.PORT;
 
 //db
-export const DBNAME = process.env.DBNAME || 'bienesraices_node_mvc';
-export const DBUSER = process.env.DBUSER || 'root';
-export const DBPASSWORD = process.env.DBPASSWORD || '1234';
-export const HOST = process.env.HOST || 'localhost';
-export const DBPORT = process.env.DBPORT || 3306;
-export const DBDIALECT = process.env.DBDIALECT || 'mysql';
+export const DB_NAME = process.env.DBNAME;
+export const DB_USER = process.env.DBUSER;
+export const DB_PASSWORD = process.env.DBPASSWORD;
+export const DB_HOST = process.env.DBHOST;
+export const DB_PORT = process.env.DBPORT;
+export const DB_DIALECT = process.env.DBDIALECT;
