@@ -10,6 +10,11 @@ const registerForm = (req, res) => {
     });
 };
 
+const register = (req,res)=>{
+    console.log('registrando...');
+    
+};
+
 const forgotPasswordForm = (req, res) => {
     res.render('auth/forgotPassword',{
         page: 'Recupera tu Contraseña',
@@ -19,5 +24,6 @@ const forgotPasswordForm = (req, res) => {
 export{
     loginForm,
     registerForm,
+    register,
     forgotPasswordForm,
 };
