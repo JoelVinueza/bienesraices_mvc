@@ -14,7 +14,7 @@ const db = new Sequelize(DB_NAME, DB_USER , DB_PASSWORD,{
         acquire: 30000,
         idle: 10000
     },
-    operatorsAliases: false
+    //operatorsAliases: false
 });
 
 export default db;
